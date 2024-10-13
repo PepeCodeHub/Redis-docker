@@ -28,7 +28,7 @@ jobs:
       - name: Publish Docker Container
         uses: PepeCodeHub/Workflows/publish-docker-container@v1.0.0
         with:
-          docker_image_name: 'postgresql-docker-db'
+          docker_image_name: 'redis-docker'
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
